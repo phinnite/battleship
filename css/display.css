@@ -1,0 +1,31 @@
+h1,
+h2,
+h3,
+p {
+  text-indent: initial;
+  margin-left: initial;
+  width: initial;
+}
+.toblock {
+  background: darkgreen;
+  display: block;
+}
+.toinline {
+  background: darkred;
+  display: inline;
+}
+.block {
+  background: saddlebrown;
+  width: 300px;
+  margin: 10px auto;
+  text-align: center;
+}
+.inline {
+  background: purple;
+  width: 50%;
+  margin: 10px auto;
+}
+.center {
+  text-align: center;
+  vertical-align: middle;
+}

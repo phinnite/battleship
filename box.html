@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/box.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1 id="heading">&nbsp;CSS tutorial&nbsp;</h1>
+      <div id="nav-placeholder"></div>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script>
+        $.get("nav.html", function(data) {
+          $("#nav-placeholder").replaceWith(data);
+        });
+      </script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script>
+        $(function() {
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+    </div>
+    <h2>Box Model</h2>
+    <div>
+      <img src="./images/boxmodel.gif" alt="Box Model" />
+      <h2 class="capitalize fontbg1 box1">Hello World is fucking awesome!</h2>
+      <p class="fontbg2 box2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+        reprehenderit, suscipit repellat id possimus numquam sint molestiae
+        laborum officia quos quibusdam expedita dolor maiores? Saepe culpa
+        obcaecati tempora nihil ipsam?
+      </p>
+      <p class="fontbg2 box3">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+        reprehenderit, suscipit repellat id possimus numquam sint molestiae
+        laborum officia quos quibusdam expedita dolor maiores? Saepe culpa
+        obcaecati tempora nihil ipsam?
+      </p>
+      <p class="box4">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+        reprehenderit, suscipit repellat id possimus numquam sint molestiae
+        laborum officia quos quibusdam expedita dolor maiores? Saepe culpa
+        obcaecati tempora nihil ipsam?
+      </p>
+    </div>
+    <div>
+      <br />
+      <br />
+      <a href="#heading">Back to top</a>
+      <br />
+      <br />
+      <a href="./index.html">Back to homepage</a>
+    </div>
+  </body>
+</html>

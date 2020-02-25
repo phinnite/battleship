@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="./index.html">Topics</a>
+          <div class="dropdown-content">
+            <a href="./color.html">Color</a>
+            <a href="./unit.html">Units in the CSS</a>
+            <a href="./Typography.html">Typography</a>
+            <a href="./box.html">Box Model</a>
+            <a href="./outline.html">Outline vs Border</a>
+            <a href="./display.html">Display</a>
+            <a href="./Elements of browser.html">Elements of browser</a>
+            <a href="./background.html">Background</a>
+          </div>
+        </li>
+        <li><a href="./about.html">About</a></li>
+      </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $(function() {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
+  </body>
+</html>

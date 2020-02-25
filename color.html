@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color tutorial</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div>
+      <h1 id="heading">&nbsp;CSS tutorial&nbsp;</h1>
+      <div id="nav-placeholder"></div>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script>
+        $.get("nav.html", function(data) {
+          $("#nav-placeholder").replaceWith(data);
+        });
+      </script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script>
+        $(function() {
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+    </div>
+    <div>
+      <h2>Color</h2>
+      <h2><span class="red">I'M RED</span></h2>
+      <p>Take a look at the difference between using span and div</p>
+
+      <h2><span class="red lowercase">I'M RED AND LOWERCASE</span></h2>
+      <h3 class="green uppercase"><span>I'm green</span></h3>
+      <h3 id="heading">I'm heading</h3>
+      <h3><span class="green">I'm green</span></h3>
+      <h2><span id="color1">RGBA/RGB Color</span></h2>
+      <h2><span id="color1">RGBA/RGB Color2</span></h2>
+      <h2><span id="color2">HSL Color</span></h2>
+      <h2><span id="color3">HEX Color</span></h2>
+    </div>
+    <div>
+      <br />
+      <br />
+      <a href="#heading">Back to top</a>
+      <br />
+      <br />
+      <a href="./index.html">Back to homepage</a>
+    </div>
+  </body>
+</html>

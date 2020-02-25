@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typography</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico|Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <h1 id="heading">&nbsp;CSS tutorial&nbsp;</h1>
+      <div id="nav-placeholder"></div>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script>
+        $.get("nav.html", function(data) {
+          $("#nav-placeholder").replaceWith(data);
+        });
+      </script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script>
+        $(function() {
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+    </div>
+    <h2>Typography</h2>
+    <div>
+      <h3 class="fontstyle2">Hello world</h3>
+      <p class="fontstyle1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam omnis
+        deserunt quos repudiandae quibusdam nobis incidunt neque magnam quia
+        dolorem, placeat id unde ipsa facilis suscipit atque magni delectus
+        officiis. Corrupti debitis, sit nemo eum rem recusandae vero adipisci
+        voluptatem quis repudiandae at. Nisi nobis animi, pariatur libero enim
+        quod!
+      </p>
+      <h3 class="fontstyle4">Hello world</h3>
+      <p class="fontstyle3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus
+        saepe accusantium, reprehenderit ullam magni libero autem, ab inventore
+        assumenda sit sequi maxime eligendi esse ut quod ipsa iste similique?
+      </p>
+      <h3 class="fontstyle5 textcenter">Hello world</h3>
+      <p class="textright">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores aut
+        dolor eligendi! Iusto autem ex saepe doloribus sequi facilis, ipsa in
+        accusamus nobis nulla magnam, commodi, dolor mollitia labore
+        perferendis?
+      </p>
+      <h3 class="fontstyle2 uppercase textdeco">Hello world</h3>
+      <p class="spacing">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ducimus
+        reiciendis officiis rem amet eum tempore excepturi, sunt, culpa, fuga
+        exercitationem quae natus modi fugiat consectetur unde! Enim, error
+        illo!
+      </p>
+    </div>
+    <div>
+      <br />
+      <br />
+      <a href="#heading">Back to top</a>
+      <br />
+      <br />
+      <a href="./index.html">Back to homepage</a>
+    </div>
+  </body>
+</html>

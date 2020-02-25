@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS tutorial</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
+  </head>
+  <body>
+    <div>
+      <h1 id="heading">&nbsp;CSS tutorial&nbsp;</h1>
+      <div id="nav-placeholder"></div>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script>
+        $.get("nav.html", function(data) {
+          $("#nav-placeholder").replaceWith(data);
+        });
+      </script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script>
+        $(function() {
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+    </div>
+    <div>
+      <h2>Welcome to CSS tutorial</h2>
+      <p>
+        Let's go through each section together, shall we?
+      </p>
+    </div>
+
+    <div>
+      <h2>Topics</h2>
+      <ul>
+        <li><a href="./color.html">Color</a></li>
+        <li><a href="./unit.html">Units in the CSS</a></li>
+        <li><a href="./Typography.html">Typography</a></li>
+        <li><a href="./box.html">Box Model</a></li>
+        <li><a href="./outline.html">Outline vs Border</a></li>
+        <li>
+          <a href="./display.html">Display</a>
+          <ul class="circlelist">
+            <li><a href="./display.html">Inline element</a></li>
+            <li><a href="./display.html">Block element</a></li>
+          </ul>
+        </li>
+        <li><a href="./Elements of browser.html">Elements of browser</a></li>
+        <li><a href="./background.html">Background</a></li>
+      </ul>
+    </div>
+    <div>
+      <br />
+      <br />
+      <a href="#heading">Back to top</a>
+    </div>
+  </body>
+</html>

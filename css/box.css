@@ -1,0 +1,52 @@
+.capitalize {
+  text-transform: capitalize;
+}
+.fontbg1 {
+  background: #1782df;
+  color: rgb(24, 4, 97);
+  font-weight: 700;
+}
+.fontbg2 {
+  background: rgb(141, 124, 124);
+  font-weight: 500;
+  color: black;
+}
+/* padding: x = equal padding everysides */
+/* padding: x y => X = TOP BOTTOM Y = LEFT RIGHT */
+/* padding: TOP RIGHT BOTTOM LEFT */
+.box1 {
+  padding: 10px;
+  margin: 0;
+  border: double azure 10px;
+  border-radius: 50px;
+  width: fit-content;
+}
+.box2 {
+  margin: 10px 0 0 0;
+  padding: 15px 40px;
+  border-bottom: solid 10px;
+  border-top: double 10px;
+  border-left: dashed 10px;
+  border-right: outset 10px;
+  background-color: royalblue;
+}
+.box3 {
+  padding: 10px 20px 30px 40px;
+  margin: 10px 0 0 0;
+  border-style: solid ridge inset dotted;
+  border-width: 10px;
+  border-color: rgb(2, 125, 248) aqua deeppink red;
+  border-radius: 50%;
+}
+.box4 {
+  padding: 10px;
+  margin: -20px 0 0 0;
+  background-color: steelblue;
+  border: rgb(73, 247, 4) double 10px;
+  border-radius: 20px;
+}
+.box2,
+.box3,
+.box4 {
+  max-width: 700px;
+}

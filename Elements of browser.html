@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elements of browser</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/element.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1 id="heading">&nbsp;CSS tutorial&nbsp;</h1>
+      <div id="nav-placeholder"></div>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script>
+        $.get("nav.html", function(data) {
+          $("#nav-placeholder").replaceWith(data);
+        });
+      </script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script>
+        $(function() {
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+    </div>
+    <h2>Elements of browser</h2>
+    <div>
+      <h3>Border-box</h3>
+      <div class="box-1 center">normal</div>
+      <div class="box-2 center">border-box</div>
+      <div class="box-3 center">no border-box</div>
+      <p>
+        We should always have this set in style sheet so your website doesn't
+        mess up when you adjust your size.
+      </p>
+      <p class="codefont" style="margin-left: 20px; width: 700px;">
+        * { <br />
+        &emsp;&emsp; margin: 0; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp; padding: 0; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp; box-sizing: border-box; <br />
+        }
+      </p>
+      <h3>Opacity</h3>
+    </div>
+    <div>
+      <br />
+      <br />
+      <a href="#heading">Back to top</a>
+      <br />
+      <br />
+      <a href="./index.html">Back to homepage</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display > Inline and Block element</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/display.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1 id="heading">&nbsp;CSS tutorial&nbsp;</h1>
+      <div id="nav-placeholder"></div>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script>
+        $.get("nav.html", function(data) {
+          $("#nav-placeholder").replaceWith(data);
+        });
+      </script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script>
+        $(function() {
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+    </div>
+    <h2>Display</h2>
+    <!-- Content here -->
+    <div>
+      <div class="toblock">div: I'm block element</div>
+      <h1 class="toinline">
+        h1: I'm block element but display makes me inline
+      </h1>
+      <p class="toblock">p: I'm block element</p>
+      <span class="toinline">span: I'm inline element</span>
+      <span class="toblock"
+        >span: I'm inline element but display makes me block</span
+      >
+      <a href="#" class="toblock">a: I'm a block Link</a>
+      <img src="./images/photo.jpeg" alt="photo.jpeg" width="200" />
+      <p class="block">block element center</p>
+      <div class="center">
+        <span class="inline">inline element center</span>
+      </div>
+    </div>
+    <div>
+      <br />
+      <br />
+      <a href="#heading">Back to top</a>
+      <br />
+      <br />
+      <a href="./index.html">Back to homepage</a>
+    </div>
+  </body>
+</html>
